@@ -1,0 +1,29 @@
+image: codefreshplugins/cfstep-azure-key-vault
+categories:
+  - Utility
+version: 0.1.0
+description: "Fetch Secrets from Azure Key Vault"
+keywords:
+  - azure
+  - secrets
+  - keys
+  - vault
+sources:
+  - https://github.com/codefresh-contrib/cfstep-azure-key-vault
+maintainers:
+  - name: Dustin Van Buskirk
+    email: dustinb@codefresh.io
+icon: https://github.com/codefresh-contrib/cfstep-azure-key-vault/raw/master/azure-key-vault-icon.png
+envs:
+  - name: AZURE_CLIENT_ID
+    description: "Application (client) ID for Service Principal"
+  - name: AZURE_SECRET 
+    description: "Secret for Service Principal"
+  - name: AZURE_TENANT 
+    description: "Directory (tenant) ID for Service Principal"
+  - name: AZURE_SECRET_ID 
+    description: "Secret ID from Azure Key Vault"
+  - name: AZURE_SECRET_VERSION 
+    description: "Secret Version from Azure Key Vault"
+  - name: AZURE_VAULT_URL 
+    description: "URL for Azure Key Vault"
